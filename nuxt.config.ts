@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
   ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   runtimeConfig: {
     public: {
       fbApiKey: process.env.NUXT_PUBLIC_FB_API_KEY || '',
