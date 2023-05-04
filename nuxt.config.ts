@@ -18,6 +18,7 @@ export default defineNuxtConfig({
       fbMessagingSenderId: process.env.NUXT_PUBLIC_FB_MESSAGING_SENDER_ID || '',
       fbAppId: process.env.NUXT_PUBLIC_FB_APP_ID || '',
       fbMeasurementId: process.env.NUXT_PUBLIC_FB_MEASUREMENT_ID || '',
+      openAiKey: process.env.NUXT_PUBLIC_OPEN_AI_KEY || '',
     },
   },
 })

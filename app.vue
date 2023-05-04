@@ -1,5 +1,16 @@
+<script lang="ts" setup>
+import { useCollection, useDocument } from 'vuefire'
+import { addDoc, collection, doc, setDoc } from 'firebase/firestore'
+import { useFirestore } from 'vuefire'
+
+const db = useFirestore()
+const todos = collection(db, 'todos')
+// setDoc(doc(db, "cities", "new-city-id"), {'name': 'Tokyo', 'country': 'Japan'})
+// addDoc(todos, { text: 'Hello world!' })
+</script>
+
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
